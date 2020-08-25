@@ -3,7 +3,7 @@
 Trata-se de dois projectos **demorestapi** e **RestAPI** que comunicam entre si através de serviços web.
 
 ## demorestapi
-É uma simples API REST desenvolvida em JavaScript permite efectuar um **CRUD**
+É uma simples API REST desenvolvida em Node.js permite efectuar um **CRUD**
 sobre um **JSON** tomado como "base de dados". A API é construída usando Node.js com as bibliotecas:
 - **Express** - é um framework para aplicações web para Node.js [Documentação](https://expressjs.com/).
 - **Joi** - é uma poderosa biblioteca de validação de dados para JavaScript [Documentação](https://www.npmjs.com/package/joi).

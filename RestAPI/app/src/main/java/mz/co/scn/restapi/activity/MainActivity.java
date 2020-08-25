@@ -20,7 +20,6 @@ import mz.co.scn.restapi.sync.ReceivePersonAsync;
 
 public class MainActivity extends AppCompatActivity {
     private static FragmentManager fragmentManager;
-    SwipeRefreshLayout swipeRefreshLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,13 +29,6 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         fragmentManager = getSupportFragmentManager();
-        swipeRefreshLayout = findViewById(R.id.swipeToRefresh);
-        swipeRefreshLayout.setColorSchemeResources(R.color.colorAccent);
-
-        swipeRefreshLayout.setOnRefreshListener(() -> {
-            new ReceivePersonAsync(this).execute();
-            swipeRefreshLayout.setRefreshing(false);
-        });
 
         //new ReceivePersonAsync(this).execute();
 

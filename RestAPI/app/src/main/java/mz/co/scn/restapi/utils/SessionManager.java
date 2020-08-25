@@ -15,7 +15,7 @@ import java.util.List;
 import mz.co.scn.restapi.model.Person;
 
 /**
- * Created by Simao on 10/20/2016.
+ * Created by Sidónio Goenha on 06/08/2020.
  */
 public class SessionManager {
 

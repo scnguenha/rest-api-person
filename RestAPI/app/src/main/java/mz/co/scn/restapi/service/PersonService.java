@@ -21,7 +21,7 @@ public class PersonService {
 
     public static HttpResponse get(String url, String contentType) throws IOException {
         HttpGet httpGet = new HttpGet(getAbsoluteUrl(url));
-        httpGet.addHeader("Host", "192.168.0.211");
+        httpGet.addHeader("Host", "192.168.43.163");
         httpGet.addHeader("Content-Type", contentType);
 
         HttpResponse response = httpClient.execute(httpGet);
@@ -31,7 +31,7 @@ public class PersonService {
 
     public static HttpResponse post(String url, HttpEntity httpEntity, String contentType) throws IOException {
         HttpPost httpPost = new HttpPost(getAbsoluteUrl(url));
-        httpPost.addHeader("Host", "192.168.0.211:8180");
+        httpPost.addHeader("Host", "192.168.43.163:8180");
         httpPost.addHeader("Content-Type", contentType);
         httpPost.setEntity(httpEntity);
 
@@ -42,7 +42,7 @@ public class PersonService {
 
     public static HttpResponse put(String url, HttpEntity httpEntity, String contentType) throws IOException {
         HttpPut httpPut = new HttpPut(getAbsoluteUrl(url));
-        httpPut.addHeader("Host", "192.168.0.211:8180");
+        httpPut.addHeader("Host", "192.168.43.163:8180");
         httpPut.addHeader("Content-Type", contentType);
         httpPut.setEntity(httpEntity);
 
@@ -53,7 +53,7 @@ public class PersonService {
 
     public static HttpResponse delete(String url, String contentType) throws IOException {
         HttpDelete httpDelete = new HttpDelete(getAbsoluteUrl(url));
-        httpDelete.addHeader("Host", "192.168.0.211:8180");
+        httpDelete.addHeader("Host", "192.168.43.163:8180");
         httpDelete.addHeader("Content-Type", contentType);
 
         HttpResponse response = httpClient.execute(httpDelete);
@@ -62,6 +62,6 @@ public class PersonService {
     }
 
     private static String getAbsoluteUrl(String relativeUrl) {
-        return "http://192.168.0.211:8180/api/" + relativeUrl;
+        return "http://192.168.43.163:8180/api/" + relativeUrl;
     }
 }

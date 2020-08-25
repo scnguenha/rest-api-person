@@ -5,7 +5,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 
 /**
- * Created by Simao on 10/24/2016.
+ * Created by Sidónio Goenha on 06/08/2020.
  */
 public class ObjectMapperProvider {
 
